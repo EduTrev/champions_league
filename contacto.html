@@ -7,7 +7,8 @@
 </head>
 <body>
     <header>
-        <h1>Formulario de Opinión sobre la UCL</h1>
+        <h1>Comunidad y Opinión sobre la UCL</h1>
+        <p><em>Forma parte del debate sobre la máxima competición de clubes.</em></p>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -21,28 +22,41 @@
 
     <main>
         <section>
-            <h2>¡Queremos saber tu opinión!</h2>
-            <p>Déjanos tus comentarios sobre quién crees que ganará la próxima edición o tu momento favorito de la Champions League.</p>
+            <h2>¡Envíanos tus Comentarios y Predicciones!</h2>
+            <p>Queremos conocer tu opinión sobre el torneo, tus momentos favoritos o quién consideras que levantará el trofeo en la presente edición.</p>
 
             <form action="#">
-                <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required><br><br>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Eduardo Treviño" required><br><br>
 
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required><br><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required><br><br>
+                </fieldset>
 
-                <label for="equipo">¿Quién es tu candidato a ganar la Champions?</label><br>
-                <select id="equipo" name="equipo">
-                    <option value="real-madrid">Real Madrid</option>
-                    <option value="manchester-city">Manchester City</option>
-                    <option value="bayern">Bayern Múnich</option>
-                    <option value="barcelona">FC Barcelona</option>
-                    <option value="otro">Otro equipo</option>
-                </select><br><br>
+                <br>
 
-                <label for="comentario">Mensaje o comentario:</label><br>
-                <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe tu opinión aquí..."></textarea><br><br>
+                <fieldset>
+                    <legend>Encuesta de Fútbol</legend>
+                    <label for="equipo">¿Cuál es tu candidato favorito a ganar la Champions?</label><br>
+                    <select id="equipo" name="equipo">
+                        <option value="real-madrid">Real Madrid CF</option>
+                        <option value="manchester-city">Manchester City</option>
+                        <option value="bayern">FC Bayern Múnich</option>
+                        <option value="barcelona">FC Barcelona</option>
+                        <option value="liverpool">Liverpool FC</option>
+                        <option value="otro">Otro club</option>
+                    </select><br><br>
 
+                    <label for="jugador">¿Quién es para ti el mejor jugador histórico del torneo?</label><br>
+                    <input type="text" id="jugador" name="jugador" placeholder="Ej. Cristiano Ronaldo, Lionel Messi..."><br><br>
+
+                    <label for="comentario">Mensaje o Análisis del Torneo:</label><br>
+                    <textarea id="comentario" name="comentario" rows="6" cols="50" placeholder="Escribe aquí tu análisis o recuerdo favorito..."></textarea><br><br>
+                </fieldset>
+
+                <br>
                 <button type="submit">Enviar Opinión</button>
             </form>
         </section>
