@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Champions League</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Opinión sobre la UCL</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cristiano_ronaldo.html">Cristiano Ronaldo</a></li>
+                <li><a href="clubes-leyenda.html">Clubes Leyenda</a></li>
+                <li><a href="finales-memorables.html">Finales Memorables</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>¡Queremos saber tu opinión!</h2>
+            <p>Déjanos tus comentarios sobre quién crees que ganará la próxima edición o tu momento favorito de la Champions League.</p>
+
+            <form action="#">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required><br><br>
+
+                <label for="equipo">¿Quién es tu candidato a ganar la Champions?</label><br>
+                <select id="equipo" name="equipo">
+                    <option value="real-madrid">Real Madrid</option>
+                    <option value="manchester-city">Manchester City</option>
+                    <option value="bayern">Bayern Múnich</option>
+                    <option value="barcelona">FC Barcelona</option>
+                    <option value="otro">Otro equipo</option>
+                </select><br><br>
+
+                <label for="comentario">Mensaje o comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe tu opinión aquí..."></textarea><br><br>
+
+                <button type="submit">Enviar Opinión</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Práctica 2 | Formulario de Contacto</p>
+    </footer>
+</body>
+</html>
